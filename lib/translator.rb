@@ -1,5 +1,4 @@
 require 'yaml'
-require 'pry'
 
 def load_library(file)
   emoticon_file = YAML.load_file(file)
@@ -7,7 +6,6 @@ def load_library(file)
     emoticon_file.each do |emotion, emoticons_in_array|
       emotion => {}
       ['english', 'japanese'].zip(emoticons_in_array).to_h
-        binding.pry
     end
   organized_emoticon_file
 end

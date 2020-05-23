@@ -3,7 +3,9 @@ require 'yaml'
 def load_library
   emoticon_file = YAML.load_file('emoticons.yml')
   organized_emoticon_file = {}
+    emoticon_file.each_value
     
+    end
   organized_emoticon_file
 end
 

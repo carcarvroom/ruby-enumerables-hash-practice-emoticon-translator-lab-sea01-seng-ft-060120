@@ -1,5 +1,4 @@
 require 'yaml'
-require 'pry'
 
 def load_library(file)
   emoticon_file = YAML.load_file(file)
@@ -31,5 +30,4 @@ def get_english_meaning(file, japanese_emoticon)
       puts english_meaning
     end
   end
-  binding.pry
 end

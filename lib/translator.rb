@@ -17,7 +17,7 @@ end
 def get_english_meaning(file, japanese_emoticon)
   library = load_library(file)
   if library.key(japanese_emoticon) == NIL
-    puts none
+    puts "none"
   else 
     emotion = library.key(japanese_emoticon)
     english_meaning = library[emotion][:english]

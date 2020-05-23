@@ -3,7 +3,7 @@ require 'yaml'
 def load_library(file)
   emoticon_file = YAML.load_file(file)
   organized_emoticon_file = {}
-    emoticon_file.each do |emoticons_in_array|
+    emoticon_file.each do |emotion, emoticons_in_array|
       ['english', 'japanese'].zip(emoticons_in_array).to_h
         
       end

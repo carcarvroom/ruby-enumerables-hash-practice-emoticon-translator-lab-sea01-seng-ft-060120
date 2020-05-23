@@ -21,5 +21,5 @@ def get_english_meaning(file, japanese_emoticon)
   else 
     english_meaning = library(japanese_emoticon)(:english)
   end
-  english_meaning
+  puts english_meaning
 end

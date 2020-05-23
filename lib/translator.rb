@@ -1,5 +1,5 @@
 require 'yaml'
-require 'pry'
+
 def load_library(file)
   emoticon_file = YAML.load_file(file)
   organized_emoticon_file = {}
@@ -28,10 +28,8 @@ def get_english_meaning(file, japanese_emoticon)
     library.each do |emotion, language_key|
       english_meaning = language_key.key(japanese_emoticon) 
       puts english_meaning
-      binding.pry
     end
   end
-  binding.pry
 end
 
 english = get_english_meaning('./lib/emoticons.yml', "(＾ｖ＾)")

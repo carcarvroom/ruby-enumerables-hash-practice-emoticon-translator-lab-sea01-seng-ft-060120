@@ -16,5 +16,5 @@ end
 
 def get_english_meaning(file, japanese_emoticon)
   library = load_library(file)
-  library.key(english_emoticon)
+  library.key(japanese_emoticon)
 end

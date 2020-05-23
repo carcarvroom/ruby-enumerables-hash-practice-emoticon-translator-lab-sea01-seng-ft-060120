@@ -1,4 +1,5 @@
 require 'yaml'
+require 'pry'
 
 def load_library(file)
   emoticon_file = YAML.load_file(file)
@@ -25,8 +26,8 @@ def get_english_meaning(file, japanese_emoticon)
   if library.value?(japanese_emoticon) == FALSE
     puts "Sorry, that emoticon was not found"
   else
-    
-    end
+   english_meaning = library.key(japanese_emoticon) 
    puts english_meaning
  end
+ binding.pry
 end

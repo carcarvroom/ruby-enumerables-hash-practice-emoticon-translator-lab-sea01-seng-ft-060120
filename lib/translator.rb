@@ -34,5 +34,5 @@ def get_english_meaning(file, japanese_emoticon)
   binding.pry
 end
 
-english = get_english_meaning('/lib/emoticons.yml', "(＾ｖ＾)")
+english = get_english_meaning('./lib/emoticons.yml', "(＾ｖ＾)")
 puts english

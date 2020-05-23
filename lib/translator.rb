@@ -33,3 +33,5 @@ def get_english_meaning(file, japanese_emoticon)
   end
   binding.pry
 end
+
+english = get_english_meaning('/lib/emoticons.yml', "")

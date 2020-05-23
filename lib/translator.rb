@@ -31,5 +31,4 @@ def get_english_meaning(file, japanese_emoticon)
       binding.pry
     end
   end
-  binding.pry
 end

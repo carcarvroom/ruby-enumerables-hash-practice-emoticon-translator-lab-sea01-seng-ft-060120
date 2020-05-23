@@ -25,8 +25,8 @@ def get_english_meaning(file, japanese_emoticon)
   if library.value?(japanese_emoticon) == FALSE
     puts "Sorry, that emoticon was not found"
   else
-    library.each do |emotion|
-    english_meaning = emotion.key(japanese_emoticon) 
+    library.each do |emotion, meanings|
+    english_meaning = meanings.key(japanese_emoticon) 
     end
    puts english_meaning
  end

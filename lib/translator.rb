@@ -27,7 +27,8 @@ def get_english_meaning(file, japanese_emoticon)
   else
     library.each do |emotion|
       english_meaning = emotion.key(japanese_emoticon) 
-      puts english_meaning
+
     end
   end
+        puts english_meaning
 end

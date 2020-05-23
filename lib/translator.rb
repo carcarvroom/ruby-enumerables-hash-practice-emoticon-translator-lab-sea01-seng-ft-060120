@@ -1,7 +1,7 @@
 require 'yaml'
 
 def load_library
-  emoticon_file = YAML.load_file('emoticons.yml')
+  emoticon_file = YAML.load_file('lib/emoticons.yml')
    puts emoticon_file.inspect
   organized_emoticon_file = {}
     emoticon_file.each do |emoticons_in_array|

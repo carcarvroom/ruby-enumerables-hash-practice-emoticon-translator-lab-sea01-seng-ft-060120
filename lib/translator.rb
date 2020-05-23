@@ -23,7 +23,9 @@ end
 def get_english_meaning(file, japanese_emoticon)
   library = load_library(file)
   if library.value?(japanese_emoticon) == FALSE
-    puts ""Sorry, that emoticon was not found""
-  english_meaning = library.value?(japanese_emoticon) 
-  english_meaning
+    puts "Sorry, that emoticon was not found"
+  else
+   english_meaning = library.key(japanese_emoticon) 
+   puts english_meaning
+ end
 end

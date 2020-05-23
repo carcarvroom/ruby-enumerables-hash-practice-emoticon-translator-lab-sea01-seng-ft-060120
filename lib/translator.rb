@@ -18,4 +18,4 @@ def get_english_meaning
 end
 
 test = load_library("emoticons.yml")
-print test
+put test

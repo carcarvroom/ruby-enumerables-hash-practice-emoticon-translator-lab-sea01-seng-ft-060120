@@ -8,7 +8,6 @@ def load_library(file)
       emotion => {}
       ['english', 'japanese'].zip(emoticons_in_array).to_h
         
-      end
     end
   organized_emoticon_file
   binding.pry

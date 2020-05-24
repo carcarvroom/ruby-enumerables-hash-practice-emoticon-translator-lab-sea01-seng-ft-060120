@@ -11,7 +11,7 @@ end
 
 def get_japanese_emoticon(file, english_emoticon)
   library = load_library(file)
-  if library.key(japanese_emoticon) == NIL
+  if library.key(english_emoticon) == NIL
     puts "none"
   else 
     emotion = library.key(english_emoticon)

@@ -22,7 +22,7 @@ end
 
 def get_english_meaning(file, japanese_emoticon)
   library = load_library(file)
-  
+  library.each
   if library.value?(japanese_emoticon) == FALSE
     puts "Sorry, that emoticon was not found"
   else

@@ -26,6 +26,7 @@ def get_english_meaning(file, japanese_emoticon)
     if language_key.value?(japanese_emoticon)
       return emotion
     end
+    
   end
   puts "Sorry, that emoticon was not found"
 end

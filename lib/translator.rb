@@ -1,5 +1,5 @@
 require 'yaml'
-
+require 'pry'
 def load_library(file)
   emoticon_file = YAML.load_file(file)
   organized_emoticon_file = {}
@@ -26,7 +26,7 @@ def get_english_meaning(file, japanese_emoticon)
     if language_key.value?(japanese_emoticon)
       return emotion
     end
-    
   end
+  binding.pry
   puts "Sorry, that emoticon was not found"
 end

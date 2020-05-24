@@ -24,7 +24,7 @@ def get_english_meaning(file, japanese_emoticon)
   library = load_library(file)
   library.each do |emotion, language_key|
     if language_key.value?(japanese_emoticon)
-      english_meaning = library[emotion][language_key.key(japanese_emoticon) 
+      english_meaning = library[emotion][language_key.key(japanese_emoticon)] 
       return english_meaning
     end
   end

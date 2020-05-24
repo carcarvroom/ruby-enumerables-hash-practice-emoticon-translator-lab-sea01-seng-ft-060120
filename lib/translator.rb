@@ -1,5 +1,5 @@
 require 'yaml'
-require 'pry'
+
 def load_library(file)
   emoticon_file = YAML.load_file(file)
   organized_emoticon_file = {}

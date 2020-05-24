@@ -24,7 +24,7 @@ def get_english_meaning(file, japanese_emoticon)
   library = load_library(file)
   library.each do |emotion, language_key|
     if language_key.value?(japanese_emoticon)
-      return emotion
+      puts emotion
     end
     
   end

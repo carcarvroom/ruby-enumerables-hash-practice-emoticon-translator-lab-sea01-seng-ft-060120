@@ -26,8 +26,8 @@ def get_english_meaning(file, japanese_emoticon)
     if language_key.value?(japanese_emoticon) == FALSE
       puts "Sorry, that emoticon was not found"
     else
-        english_meaning = language_key.key(japanese_emoticon) 
-        puts english_meaning
-      end
+      english_meaning = language_key.key(japanese_emoticon) 
+      puts english_meaning
+    end
   end
 end
